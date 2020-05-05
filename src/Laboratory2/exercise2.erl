@@ -10,15 +10,14 @@
 -author("boykodm").
 
 %% API
--export([func/1]).
+-export([loop/1]).
 
 
-func(X) when X<1 ->
-  0;
-func(X) when X>1 ->
-  factorial(X).
+loop(X) when is_integer(X), X>=1 ->
+  loop(X-1),
+  io:format("~B! = ~B~n", [X,factorial(X)]);
+loop(X) when X<1 -> 0.
 
-factorial(X) when X>0 ->
-  X*factorial(X-1);
-factorial(0) ->
-  1.
+factorial(0) -> 1;
+factorial(X) when X>0 -> X*factorial(X-1).
+
