@@ -1,6 +1,6 @@
 %% 1. Видалити із списку елементи, що повторюються, залишивши один екземпляр.
 
--module(exercise1).
+-module(exercise4_1).
 -author("boykodm").
 
 %% API

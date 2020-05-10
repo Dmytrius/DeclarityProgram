@@ -1,6 +1,6 @@
 %% Видалити букви z, w із заданого списку латинських букв.
 
--module(exercise1).
+-module(exercise8_1).
 -author("boykodm").
 
 %% API

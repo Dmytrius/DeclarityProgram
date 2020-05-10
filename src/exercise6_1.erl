@@ -2,7 +2,7 @@
 %% елементи головної діагоналі поміняються місцями.
 
 
--module(exercise1).
+-module(exercise6_1).
 -author("boykodm").
 
 %% API
